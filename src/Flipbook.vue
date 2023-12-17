@@ -58,6 +58,7 @@
           />
           <img
             class="page fixed"
+            :alt="alt"
             :style="{
               width: pageWidth + 'px',
               height: pageHeight + 'px',
@@ -135,6 +136,9 @@ export default
     pagesHiRes:
       type: Array
       default: -> []
+    alt:
+      type: String
+      default: ""
     flipDuration:
       type: Number
       default: 1000
